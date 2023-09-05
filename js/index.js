@@ -52,7 +52,7 @@ function tick() {
 function scrollTo() {
 	document.querySelectorAll('a').forEach(btn => btn.addEventListener('click', (e) => {
 		e.preventDefault()
-		document.getElementById('main_form').scrollIntoView({ block: "start", behavior: "smooth" })
+		document.getElementById('toform').scrollIntoView({ block: "start", behavior: "smooth" })
 	}))
 }
 
