@@ -336,7 +336,7 @@ h2 {
 .vk-avatar img {
     float: left;
     margin-right: 10px;
-    border-radius: 5px
+    border-radius: 500px
 }
 
 .vk-comment,
@@ -350,11 +350,26 @@ h2 {
 .vk-comment-name {
     color: #555;
     font-weight: 700;
-    font-size: 12px
+    font-size: 12px;
+    
+    background-color: #f5f5f5;
+    margin-left: 60px;
+    border-radius: 7px;
+    
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .vk-comment-text {
-    margin-left: 60px
+    margin-left: 60px;
+    
+    background-color: #f5f5f5;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .vk-comment-text p {
@@ -1293,16 +1308,16 @@ h2 {
 
 .vk-comment-name {
     color: #2b587a;
-    font-size: 17px
+    font-size: 14px;
+    
+    padding: 8px 12px;
+    margin-bottom: -10px;
 }
 
 .vk-comment-name i strong {
     font-weight: 700
 }
 
-.vk-comment-text {
-    margin-left: 55px
-}
 
 .vk-comment-date {
     margin-left: 60px;
@@ -1400,12 +1415,19 @@ h2 {
 
 .vk-comment-text {
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    position: relative;
 }
 
 .vk-comment-date {
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    margin-top: 4px;
+}
+
+.vk-comment-date i {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .vk-comment-name {

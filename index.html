@@ -412,7 +412,108 @@
                                     <script src="js/script.js"></script>
                                     
                                 </div>
-                                
+    
+    
+                                <style>
+                                    .comment {
+                                        border-bottom: 1px solid #dae1e8!important;
+                                        padding-bottom: 15px!important;
+                                        margin-bottom: 15px!important;
+                                        display:block!important;
+                                    }
+    
+                                    .comment .avatar {
+                                        border-radius: 100%;
+                                        width: 48px;
+                                        height: 48px;
+                                        margin-right: 10px;
+                                        display: inline-block;
+                                        vertical-align: top;
+                                    }
+    
+                                    .comm_text {
+                                        position: relative;
+                                        background-color: #bfbfbf26;
+                                        border-radius: 7px;
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        width: -webkit-calc(100% - 65px);
+                                        width: -moz-calc(100% - 65px);
+                                        width: calc(100% - 65px)
+                                    }
+    
+                                    .comm_text .user_name {
+                                        color: rgb(36, 36, 36);
+                                        font-weight: 600;
+                                        font-size: 13px!important;
+                                        margin-bottom: 0!important;
+                                        padding: 0 10px!important;
+                                    }
+    
+                                    .comm_text .text {
+                                        font-size: 15px!important;
+                                        padding: 0 10px!important;
+                                    }
+    
+                                    .comm_text .time {
+                                        color: #999;
+                                        margin-bottom: 0
+                                    }
+    
+                                    .comments {
+                                        padding-left: 2px;
+                                        padding-right: 2px;
+                                    }
+    
+                                    .down-menu {
+                                        display: flex;
+                                        margin-left: 60px;
+                                        margin-top: 5px;
+                                    }
+    
+                                    .down-menu p {
+                                        cursor: pointer;
+                                        color: rgb(119, 119, 119);
+                                        font-weight: 600;
+                                        font-size: 12px!important;
+                                        margin: 0!important;
+                                        margin-bottom: 16px!important;
+                                        padding: 0 10px!important;
+                                    }
+                                    .emodji {
+                                        cursor: pointer;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 1px;
+                                        box-shadow: -3px 2px 5px rgb(133, 133, 133);
+                                        border-radius: 15px;
+                                        position: absolute;
+                                        background-color: white;
+                                        right: 10px;
+                                        bottom: -5px;
+                                        padding: 2px 0;
+                                        padding-right: 5px;
+                                        color: #999;
+                                    }
+    
+                                    .emodji img {
+                                        margin: 0;
+                                    }
+                                    .knopka{
+                                        padding: 20px;
+                                        background-color: black;
+                                        font-size: 30px;
+                                        color: #fff;
+                                        border-radius: 50px;
+                                        width: 100%;
+                                        text-align: center;
+                                        border: none;
+                                        display: block;
+                                        max-width: 400px;
+                                        margin: 0 auto;
+                                        text-decoration: none;
+                                    }
+                                </style>
                                 
                                 <div class="vk-container">
                                     <div class="vk-header">
@@ -434,10 +535,14 @@
                                         <div class="vk-comment-text">
                                             <p>Sto assumendo le gocce da un paio di settimane, ma l’effetto mi piace già! Sono meno gonfia, ho più energia e ho perso qualche chilo sicuramente, ma per ora non mi voglio pesare, volgio aspettare fino alla fine del trattamento;)</p>
                                             <img loading="lazy" alt src="images/p3.jpeg" style="width: 100%;max-width: 500px">
+                                            <div class="emodji">
+                                                <img src="./images/like.png" alt="">
+                                                4
+                                            </div>
                                         </div>
 
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -453,7 +558,7 @@
                                             <p>Ciao, ho assunto Fortunella per un mese ed ho perso solo 8 kg 🙁<span class="attention">:-(</span></p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -474,7 +579,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -492,7 +597,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -508,9 +613,13 @@
                                             <p>
                                                 Anche io ho ordinato! Il pacco mi è stato consegnato ieri e ho iniziato ad assumere le gocce! Non appena avrò i primi risultati, scriverò il mio feedback
                                             </p>
+                                            <div class="emodji">
+                                                <img src="./images/like.png" alt="">
+                                                <img src="./images/heart.png" alt="">
+                                            </div>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -529,7 +638,7 @@
                                             <div class="max-width-img"><img loading="lazy" alt src="images/23.jpg" style="width: 100%;"></div>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -548,7 +657,7 @@
                                             <div class="max-width-img"><img loading="lazy" alt src="images/img8.jpg" style="width: 100%;"></div>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -567,7 +676,7 @@
                                             <div class="max-width-img"><img loading="lazy" alt src="images/s112.png" style="width: 100%;"></div>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -585,7 +694,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -606,7 +715,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -624,7 +733,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -643,7 +752,7 @@
                                             <div class="max-width-img"><img loading="lazy" alt src="images/107.jpg" style="width: 100%;"></div>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load comment-id-1">
@@ -661,7 +770,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -682,7 +791,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load comment-id-1">
@@ -700,7 +809,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -718,7 +827,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>un'ora fa</strong></i>
+                                            <i><strong>un'ora fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -739,7 +848,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>55 minuti fa</strong></i>
+                                            <i><strong>55 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -757,7 +866,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>52 minuti fa</strong></i>
+                                            <i><strong>52 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -778,7 +887,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>55 minuti fa</strong></i>
+                                            <i><strong>55 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -796,7 +905,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>50 minuti fa</strong></i>
+                                            <i><strong>50 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -817,7 +926,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>48 minuti fa</strong></i>
+                                            <i><strong>48 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -836,7 +945,7 @@
                                             <span class="max-width-img"><img loading="lazy" alt src="images/201.jpg" style="width: 100%;max-width: 500px"></span>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>45 minuti fa</strong></i>
+                                            <i><strong>45 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -854,7 +963,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>43 minuti fa</strong></i>
+                                            <i><strong>43 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -875,7 +984,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>39 minuti fa</strong></i>
+                                            <i><strong>39 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -893,7 +1002,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>35 minuti fa</strong></i>
+                                            <i><strong>35 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -911,7 +1020,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>31 minuti fa</strong></i>
+                                            <i><strong>31 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -932,7 +1041,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>30 minuti fa</strong></i>
+                                            <i><strong>30 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -950,7 +1059,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>30 minuti fa</strong></i>
+                                            <i><strong>30 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -968,7 +1077,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>27 minuti fa</strong></i>
+                                            <i><strong>27 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -986,7 +1095,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>24 minuti fa</strong></i>
+                                            <i><strong>24 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -1004,7 +1113,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>20 minuti fa</strong></i>
+                                            <i><strong>20 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -1025,7 +1134,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>17 minuti fa</strong></i>
+                                            <i><strong>17 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment">
@@ -1043,7 +1152,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>10 minuti fa</strong></i>
+                                            <i><strong>10 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="vk-comment-load">
@@ -1066,7 +1175,7 @@
                                             </p>
                                         </div>
                                         <div class="vk-comment-date">
-                                            <i><strong>7 minuti fa</strong></i>
+                                            <i><strong>7 minuti fa</strong></i><i><strong>Mi piace</strong></i><i><strong>Rispondi</strong></i><i><strong>Traduci</strong></i><i><strong>Più</strong></i>
                                         </div>
                                     </div>
                                     <div class="center-block">
@@ -1075,6 +1184,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
